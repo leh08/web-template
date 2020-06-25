@@ -12,6 +12,7 @@ from blacklist import BLACKLIST
 
 from resources.user import User, Signup, Login, Logout, TokenRefresh, CurrentUser, Resend
 from resources.confirmation import Confirmation
+from resources.flow import FlowList, Flow
 from resources.file import Upload
 
 from services.uploads import UPLOAD_SET
@@ -56,6 +57,8 @@ api.add_resource(Logout, "/logout")
 api.add_resource(CurrentUser, "/user")
 api.add_resource(Resend, "/resend")
 api.add_resource(Confirmation, "/confirmation/<string:confirmation_id>")
+api.add_resource(FlowList, "/flows")
+api.add_resource(Flow, "/flows/<int:flow_id>")
 api.add_resource(Upload, "/upload/<string:flow_name>")
 
 if __name__ == "__main__":
