@@ -1,0 +1,12 @@
+Python-Dotenv
+SQLAlchemy
+Alembic
+Marshmallow
+Marshmallow-SQLAlchemy
+Flask
+Werkzeug==0.16.0
+Flask-RESTful
+Flask-CORS
+Flask-JWT-Extended
+Flask-Uploads
+uWSGI
