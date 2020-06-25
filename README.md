@@ -3,8 +3,11 @@ heroku login
 cd $APP_NAME
 
 heroku apps:create $APP_NAME-server
+
 heroku addons:create heroku-postgresql --app $APP_NAME-server
+
 heroku apps:create $APP_NAME-client --buildpack mars/create-react-app
+
 
 git remote -v
 
